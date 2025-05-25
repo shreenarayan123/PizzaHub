@@ -38,10 +38,12 @@
 ```bash
 git clone https://github.com/yourusername/pizzahub.git
 cd pizzahub
+```
 
 2. Install Dependencies
 ```bash
 npm install
+```
 
 3. Set up environment variables
 
@@ -52,6 +54,7 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=your_nextauth_secret
+```
 
 4. Run the development server
 
