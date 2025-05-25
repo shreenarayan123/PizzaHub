@@ -1,6 +1,6 @@
 # PizzaHub 🍕
 
-![hero](https://github.com/shreenarayan123/pizzahub/public/images/banner.png)
+![App](src/app/assets/banner.png)
 
 **PizzaHub** is a sleek and responsive full-stack web app where users can explore, filter, and feast their eyes on beautifully rendered pizzas — complete with 3D visuals and buttery-smooth UI interactions.
 
