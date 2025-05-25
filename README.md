@@ -1,6 +1,6 @@
 # PizzaHub 🍕
 
-![App](src/app/assets/banner.png)
+![Image](https://github.com/user-attachments/assets/10f6bb08-37a6-45e6-a9db-e86ed41e4c79)
 
 **PizzaHub** is a sleek and responsive full-stack web app where users can explore, filter, and feast their eyes on beautifully rendered pizzas — complete with 3D visuals and buttery-smooth UI interactions.
 
@@ -11,8 +11,8 @@
 - 🔐 Sign in with Google (OAuth)
 - 🍕 Interactive 3D pizza display using Three.js
 - 📱 Fully responsive layout (mobile, tablet, desktop)
-- 🔍 Filtering and sorting by pizza size, crust, and category
-- 🏷️ Dynamic status badges (e.g. "Best Seller", "Spicy", "Veg")
+- 🔍 Filtering and sorting by order Date, and category
+- 🏷️ Dynamic status badges (e.g. "Pending", "Delivered", "Cancelled")
 - 🎞️ Smooth animations via Framer Motion
 
 ## Tech Stack
