@@ -87,6 +87,6 @@ export interface PizzaOrderType {
   pizzaType: string;
   quantity: number;
   orderDate: string;
-  status: 'Pending' | 'Preparing' | 'Out for Delivery' | 'Delivered' | 'Cancelled';
+  status: string;
 }
 export default PizzaOrdersData;

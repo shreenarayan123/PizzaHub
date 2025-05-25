@@ -5,6 +5,7 @@ import Features from "@/components/Features";
 import DashboardPreview from "@/components/DashboardPreview";
 import Cta from "@/components/Cta";
 import Footer from "@/components/Footer";
+import Pizza from "@/components/Pizza";
 
 export default function Home() {
   

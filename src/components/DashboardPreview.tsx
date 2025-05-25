@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 type Props = {}
@@ -14,20 +15,14 @@ const DashboardPreview = (props: Props) => {
           </p>
 
           <div className="relative max-w-4xl mx-auto">
-            {/* Mock Dashboard */}
             <div className="relative bg-gradient-to-br from-white to-gray-100 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500">
               <div className="h-96 bg-gradient-to-br from-orange-100 to-red-100 p-8 blur-sm">
-                <div className="grid grid-cols-4 gap-4 mb-6">
-                  <div className="h-20 bg-white rounded-lg shadow"></div>
-                  <div className="h-20 bg-white rounded-lg shadow"></div>
-                  <div className="h-20 bg-white rounded-lg shadow"></div>
-                  <div className="h-20 bg-white rounded-lg shadow"></div>
-                </div>
-                <div className="grid grid-cols-3 gap-6">
-                  <div className="h-48 bg-white rounded-lg shadow"></div>
-                  <div className="h-48 bg-white rounded-lg shadow"></div>
-                  <div className="h-48 bg-white rounded-lg shadow"></div>
-                </div>
+                <Image
+                  src="/images/dashboard.png"
+                  alt="Dashboard Preview"
+                  layout="fill"
+                  objectFit="cover"
+                />
               </div>
 
               {/* Stats Overlay */}
@@ -51,8 +46,6 @@ const DashboardPreview = (props: Props) => {
                 </div>
               </div>
             </div>
-
-            {/* Floating UI Elements */}
             <div className="absolute -top-4 -left-4 w-12 h-12 bg-orange-500 rounded-lg shadow-lg floating animate-pulse opacity-80"></div>
             <div className="absolute -bottom-4 -right-4 w-8 h-8 bg-red-500 rounded-lg shadow-lg floating animate-bounce opacity-70"></div>
             <div className="absolute top-1/2 -left-8 w-10 h-10 bg-yellow-500 rounded-lg shadow-lg floating animate-pulse opacity-60"></div>

@@ -1,5 +1,4 @@
-import Pizza from "@/components/Pizza";
-import { create } from "domain";
+
 import { createContext, useContext, useState } from "react";
 
 import PizzaOrdersData, { PizzaOrderType } from "@/lib/Data"
@@ -10,20 +9,25 @@ interface globalContextType{
     setOrder: (orders: any) => void;
     filter: string;
     setFilter: (filter: any) => void;
+    sort: string;
+    setSort: (sort: any) => void;
 }
 export const globalContext = createContext<globalContextType>({
-    order: [],
+    order: PizzaOrdersData,
     setOrder: (orders: any) => {},
     filter: "",
     setFilter: (filter: any) => {},
+    sort: "",
+    setSort: (sort: any) => {},
 })
 export const useGlobalContext =()=> useContext(globalContext);
 export const GlobalContextProvider = ({children}:{children: React.ReactNode})=>{
-    const [order, setOrder] = useState([]);
+    const [order, setOrder] = useState(PizzaOrdersData);
     const [filter, setFilter] = useState("");
+    const [sort, setSort] = useState("");
 
     return (
-        <globalContext.Provider value={{ order, setOrder, filter, setFilter }}>
+        <globalContext.Provider value={{ order, setOrder, filter, setFilter , sort, setSort }}>
             {children}
         </globalContext.Provider>
     );

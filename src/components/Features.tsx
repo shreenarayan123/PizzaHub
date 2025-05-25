@@ -58,8 +58,6 @@ const Features = (props: Props) => {
                 <p className="text-gray-600 leading-relaxed">
                   {feature.description}
                 </p>
-
-                {/* Glow effect on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${feature.gradient} opacity-0 group-hover:opacity-10 rounded-lg transition-opacity duration-300 pointer-events-none`}></div>
               </Card>
             ))}
